@@ -6,6 +6,8 @@ Stuti. You can hover over each line of the Stuti and it gets highlighted. There 
 
 Built this since Omarchy became my primary OS and I was struggling to remember the full Stuti lol
 
+<img width="1326" height="1080" alt="screenshot-2026-09-02_16-19-18" src="https://github.com/user-attachments/assets/538b4645-225f-4acc-9e1e-79d173290077" />
+
 ## Install
 
 Requires Omarchy Quattro 4.0 or newer.
@@ -41,6 +43,9 @@ This widget was built along with a Linga Bhairavi inspired theme for Omarchy. Th
 
 Check it out here:
 [Omarchy Linga Bhairavi Theme](https://github.com/KrishJ4856/omarchy-linga-bhairavi-theme).
+
+https://github.com/user-attachments/assets/7fdb4029-974a-446d-bb3b-423f741388fb
+
 
 ## Source
 

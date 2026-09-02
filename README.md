@@ -1,7 +1,8 @@
 # Linga Bhairavi Stuti for Omarchy
 
 A deliberately minimal Omarchy Quattro bar widget. A lotus in the right-side
-status cluster opens the complete Linga Bhairavi Stuti and one listening link.
+status cluster opens a compact devotional banner, the complete Linga Bhairavi
+Stuti, and one listening link.
 
 This unofficial community plugin is not affiliated with or endorsed by Isha
 Foundation.
@@ -26,8 +27,9 @@ repository URL, confirm, and enable the plugin.
 - Middle/right click the lotus: open the Sounds of Isha recording
 - `Esc`: close the panel
 
-The panel contains only the supplied Stuti transcription and a **Sounds of
-Isha ↗** link at the bottom left. It follows the active Omarchy theme.
+The panel contains the supplied devotional banner, the Stuti transcription,
+and a **Sounds Of Isha ↗** link at the bottom left. It follows the active
+Omarchy theme.
 
 ## Update or remove
 

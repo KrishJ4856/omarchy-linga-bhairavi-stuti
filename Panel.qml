@@ -60,8 +60,8 @@ Panel {
     bar: root.bar
     open: root.opened
     focusTarget: keyCatcher
-    contentWidth: panel.fittedContentWidth(Style.space(500))
-    contentHeight: panel.fittedContentHeight(contentColumn.implicitHeight + Style.space(32), Style.space(940))
+    contentWidth: panel.fittedContentWidth(Style.space(430))
+    contentHeight: panel.fittedContentHeight(contentColumn.implicitHeight + Style.space(24), Style.space(1020))
 
     PanelKeyCatcher {
       id: keyCatcher
@@ -73,7 +73,7 @@ Panel {
       Flickable {
         anchors.fill: parent
         contentWidth: width
-        contentHeight: contentColumn.implicitHeight + Style.space(32)
+        contentHeight: contentColumn.implicitHeight + Style.space(24)
         clip: true
         boundsBehavior: Flickable.StopAtBounds
         flickableDirection: Flickable.VerticalFlick
@@ -83,23 +83,62 @@ Panel {
         Column {
           id: contentColumn
           x: Style.space(16)
-          y: Style.space(16)
+          y: Style.space(6)
           width: parent.width - Style.space(32)
-          spacing: Style.space(8)
+          spacing: 0
 
-          Text {
+          Image {
             width: parent.width
-            text: root.stutiText
-            color: root.foreground
-            font.family: Style.font.family
-            font.pixelSize: Style.font.body
-            lineHeight: 1.18
-            wrapMode: Text.WordWrap
+            height: Style.space(80)
+            source: Qt.resolvedUrl("assets/stuti-banner.png")
+            fillMode: Image.PreserveAspectCrop
+            horizontalAlignment: Image.AlignHCenter
+            verticalAlignment: Image.AlignVCenter
+            smooth: true
+            mipmap: true
+          }
+
+          Item {
+            width: 1
+            height: Style.space(16)
+          }
+
+          Repeater {
+            model: root.stutiText.length > 0 ? root.stutiText.split("\n") : []
+
+            Text {
+              required property string modelData
+
+              width: contentColumn.width
+              text: modelData.length > 0 ? modelData : " "
+              color: lineMouse.containsMouse && modelData.length > 0 ? Color.accent : root.foreground
+              font.family: Style.font.family
+              font.pixelSize: Style.font.body
+              lineHeight: 1.18
+              wrapMode: Text.WordWrap
+              horizontalAlignment: Text.AlignLeft
+
+              Behavior on color {
+                ColorAnimation { duration: 140 }
+              }
+
+              MouseArea {
+                id: lineMouse
+                anchors.fill: parent
+                hoverEnabled: true
+                acceptedButtons: Qt.NoButton
+              }
+            }
+          }
+
+          Item {
+            width: 1
+            height: Style.space(8)
           }
 
           Text {
             width: parent.width
-            text: "Sounds of Isha  ↗"
+            text: "Sounds Of Isha  ↗"
             color: Color.accent
             font.family: Style.font.family
             font.pixelSize: Style.font.bodySmall

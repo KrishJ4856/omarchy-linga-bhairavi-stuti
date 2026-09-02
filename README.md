@@ -1,18 +1,17 @@
 # Linga Bhairavi Stuti for Omarchy
 
-A deliberately minimal Omarchy Quattro bar widget. A lotus in the right-side
-status cluster opens a compact devotional banner, the complete Linga Bhairavi
-Stuti, and one listening link.
+A deliberately minimal widget for Omarchy. You see a lotus icon in the right-side
+status cluster that opens a compact widget with the complete Linga Bhairavi
+Stuti. You can hover over each line of the Stuti and it gets highlighted. There is also a link at the bottom of the Stuti which opens the official Linga Bhairavi Stuti Video on the Sounds Of Isha YouTube channel.
 
-This unofficial community plugin is not affiliated with or endorsed by Isha
-Foundation.
+Built this since Omarchy became my primary OS and I was struggling to remember the full Stuti lol
 
 ## Install
 
 Requires Omarchy Quattro 4.0 or newer.
 
 ```bash
-omarchy plugin add https://github.com/KrishJ4856/omarchy-linga-bhairavi-stuti.git --enable
+omarchy plugin add https://github.com/KrishJ4856/omarchy-linga-bhairavi-stuti
 ```
 
 Omarchy will display its standard third-party-plugin confirmation and place the
@@ -27,10 +26,6 @@ repository URL, confirm, and enable the plugin.
 - Middle/right click the lotus: open the Sounds of Isha recording
 - `Esc`: close the panel
 
-The panel contains the supplied devotional banner, the Stuti transcription,
-and a **Sounds Of Isha ↗** link at the bottom left. It follows the active
-Omarchy theme.
-
 ## Update or remove
 
 ```bash
@@ -40,10 +35,12 @@ omarchy plugin remove krish.linga-bhairavi-stuti
 
 ## Companion theme
 
-The matching palette and five Devi wallpapers are available in the
+This widget was built along with a Linga Bhairavi inspired theme for Omarchy. The theme with the 5 wallpapers included for Devi looks pretty amazing and has become my default theme right now.
+
+Check it out here:
 [Omarchy Linga Bhairavi Theme](https://github.com/KrishJ4856/omarchy-linga-bhairavi-theme).
 
-## Sources and license
+## Source
 
 - [Linga Bhairavi Stuti](https://isha.sadhguru.org/linga-bhairavi/in/en/sadhana/linga-bhairavi-stuti)
 - [Sounds of Isha recording](https://www.youtube.com/watch?v=qEZVkptPHpo)

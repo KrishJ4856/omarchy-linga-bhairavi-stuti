@@ -10,6 +10,8 @@ Built this since Omarchy became my primary OS and I was struggling to remember t
 
 Requires Omarchy Quattro 4.0 or newer.
 
+Paste this command in the terminal:
+
 ```bash
 omarchy plugin add https://github.com/KrishJ4856/omarchy-linga-bhairavi-stuti
 ```

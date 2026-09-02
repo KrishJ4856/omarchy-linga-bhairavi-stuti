@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "id": "krish.linga-bhairavi-stuti",
+  "name": "Linga Bhairavi Stuti",
+  "version": "1.0.0",
+  "author": "KrishJ4856",
+  "description": "A minimal lotus bar widget for reading and listening to the Linga Bhairavi Stuti",
+  "kinds": [
+    "bar-widget"
+  ],
+  "entryPoints": {
+    "barWidget": "Panel.qml"
+  },
+  "barWidget": {
+    "displayName": "Linga Bhairavi Stuti",
+    "description": "Open the Stuti from the Omarchy bar",
+    "category": "Info",
+    "allowMultiple": false,
+    "defaultSection": "right"
+  }
+}
